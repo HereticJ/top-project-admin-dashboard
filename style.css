@@ -1,0 +1,41 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1000px;
+    gap: 4px;
+}
+
+.header {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 100px;
+}
+
+.sidebar {
+    display: grid;
+    padding: 20px;
+    background-color: skyblue;
+    grid-row: 1 / 1;
+    grid-template-rows: 100px 250px 200px;
+}
+
+.logo {
+    display: grid;
+    font-size: 2rem;
+    grid-row: 1 / 2;
+}
+
+.dash-nav {
+    display: grid;
+    font-size: 1.5rem;
+    grid-row: 2 / 3;
+}
+
+.main-content {
+    display: grid;
+    background-color: lightgray;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+}
