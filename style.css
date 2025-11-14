@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: minmax(200px, 1fr) minmax(400px, 4fr);
     gap: 4px;
 }
 
@@ -8,49 +8,50 @@
     display: grid;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    grid-template-rows: 150px 350px 250px;
 }
 
 .sidebar {
-    display: grid;
-    background-color: skyblue;
+    background-color: #0099E6;
     grid-column: 1 / 2;
-    grid-row: 1 / 4;
-    grid-template-rows: 2fr repeat(6, 1fr) repeat(3, 1fr);
+    grid-row: 1 / 2;
     gap: 4px;
 }
 
 .logo {
     display: grid;
     font-size: 2rem;
+    font-weight: bold;
     grid-row: 1 / 2;
-    padding: 15px;
-    padding-bottom: 20px;
+    padding: 10px;
+
     place-self: start;
+    color: white;
 }
 
 .dash-nav {
-    display: grid;
     font-size: 1.2rem;
     grid-row: 2 / 3;
-    padding: 20px;
+    padding: 10px;
 }
 
 .dash-settings {
-    display: grid;
     font-size: 1.2rem;
+    font-weight: bold;
     grid-row: 3 / 4;
-    padding: 20px;
+    padding: 10px;
 }
 
 .dash-nav > a {
-    height: 40px;
+    height: auto;
     text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
 
 .dash-settings > a {
-    height: 40px;
+    height: auto;
     text-decoration: none;
+    color: white;
 }
 
 
@@ -66,8 +67,8 @@
     display: grid;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 60px 85px;
+    grid-template-columns: 4fr 100px 200px;
+    grid-template-rows: minmax(60px, 1fr) minmax(85px, 2fr);
 }
 
 .main-content {
@@ -148,7 +149,7 @@
 }
 
 .profile {
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
     grid-row: 1 / 2;
 }
 
@@ -158,23 +159,45 @@
 }
 
 .buttons {
-    display: grid;
+    grid-column: 2 / 4;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    justify-content: space-evenly;
     align-content: center;
 }
 
 .new-button {
-    grid-column: 1 / 2;
+    color: white;
+    background-color: #0099E6;
+    font-weight: bold;
+    font-size: 0.7rem;
+    height: 35px;
+    width: 75px;
+    border: none;
+    border-radius: 25px;
+    margin-right: 15px;
 }
 
 .upload-button {
-    grid-column: 2 / 3;
+    color: white;
+    background-color: #0099E6;
+    font-weight: bold;
+    font-size: 0.7rem;
+    height: 35px;
+    width: 75px;
+    border: none;
+    border-radius: 25px;
+    margin-right: 15px;
 }
 
 .share-button {
-    grid-column: 3 / 4;
+    color: white;
+    background-color: #0099E6;
+    font-weight: bold;
+    font-size: 0.7rem;
+    height: 35px;
+    width: 75px;
+    border: none;
+    border-radius: 25px;
 }
 
 
