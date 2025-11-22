@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: minmax(100px, 225px) minmax(400px, 4fr);
-    grid-template-rows: auto-fit;
+    grid-template-rows: 100%;
     background-color: lightgray;
     z-index: 0;
     gap: 4px;
@@ -82,8 +82,7 @@
     grid-template-rows: auto-fit;
     align-content: space-evenly;
     justify-content: space-evenly;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
 }
 
 .projects {
@@ -94,7 +93,7 @@
     padding-left: 20px;
     padding-right: 10px;
     padding-bottom: 50px;
-    grid-template-columns: repeat(2, minmax(300px, 385px));
+    grid-template-columns: repeat(2, minmax(300px, 350px));
     grid-template-rows: repeat(3, minmax(150px, 200px));
 }
 
@@ -105,8 +104,8 @@
     padding-right: 20px;
     padding-left: 10px;
     padding-bottom: 20px;
-    grid-template-columns: minmax(200px, auto-fit);
-    grid-template-rows: minmax(200px, 350px) 50px minmax(200px, 300px);
+    grid-template-columns: minmax(200px, 250px);
+    grid-template-rows: minmax(200px, 295px) 50px minmax(200px, 295px);
 }
 
 .announcements-title {
@@ -126,16 +125,16 @@
     grid-row: 1 / 2;
     border-radius: 10px;
     padding: 20px;
-    grid-template-columns: auto;
-    grid-template-rows: 15px 40px 15px 40px 15px 40px;
-    align-content: center;
-
+    grid-template-columns: auto-fit;
+    grid-template-rows: 20px 50px 20px 50px 20px 50px;
+    align-content: space-around;
 }
 
 .announcements > .content-title1 {
     grid-row: 1 / 2;
     font-size: 14px;
     font-weight: 700;
+    padding-top: 6px;
     margin: 0;
 }
 
@@ -143,6 +142,7 @@
     grid-row: 3 / 4;
     font-size: 14px;
     font-weight: 700;
+    padding-top: 8px;
     margin: 0;
 }
 
@@ -150,29 +150,32 @@
     grid-row: 5 / 6;
     font-size: 14px;
     font-weight: 700;
+    padding-top: 8px;
     margin: 0;
 }
 
 .announcements > .content1 {
     grid-row: 2 / 3;
-    font-size: 12px;
+    font-size: 10px;
     color: rgb(68, 68, 68);
+    padding-bottom: 4px;
     border-bottom: 1px solid darkgrey;
     margin: 0;
 }
 
 .announcements > .content2 {
     grid-row: 4 / 5;
-    font-size: 12px;
+    font-size: 10px;
     color: rgb(68, 68, 68);
     border-bottom: 1px solid darkgrey;
+    padding-bottom: 4px;
     margin: 0;
 }
 
 .announcements > .content3 {
     grid-row: 6 / 7;
     color: rgb(68, 68, 68);
-    font-size: 12px;
+    font-size: 10px;
     margin: 0;
 }
 
@@ -204,11 +207,35 @@
     border-radius: 10px;
     padding: 20px;
     grid-template-rows: repeat(4, minmax(40px auto-fit));
+    align-content: space-evenly;
 }
 
 .card {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: auto-fit;
     background-color: white;
     border-radius: 10px;
+    padding: 25px;
+    justify-content: start;
+}
+
+.card > .title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 5px;
+    place-self: start start;
+}
+
+.card > .content {
+    font-size: 0.9rem;
+    margin: 0;
+    place-self: start start;
+}
+
+.quick-links {
+    place-self: end end;
 }
 
 .searchbar {
