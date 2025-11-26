@@ -108,6 +108,14 @@
     grid-template-rows: minmax(200px, 295px) 50px minmax(200px, 295px);
 }
 
+.quick-links {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50px 50px 50px;
+    color: rgb(68, 68, 68);
+    justify-items: center;
+}
+
 .announcements-title {
     font-size: 1.1rem;
     font-weight: 700;
