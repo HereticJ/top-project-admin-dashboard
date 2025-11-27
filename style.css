@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: minmax(100px, 225px) minmax(400px, 4fr);
+    grid-template-columns: minmax(100px, 225px) 1000px;
     grid-template-rows: 100%;
     background-color: lightgray;
     z-index: 0;
@@ -17,7 +17,7 @@
     background-color: #0099E6;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    gap: 4px;
+    gap: 4px 4px;
 }
 
 .logo {
@@ -60,6 +60,7 @@
 
 .right {
     display: grid;
+    width: 1000px;
     grid-column: 2 / 3;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 4fr;
@@ -72,6 +73,37 @@
     background-color: white;
     grid-template-columns: 4fr 100px 200px;
     grid-template-rows: minmax(60px, 1fr) minmax(85px, 2fr);
+}
+
+.searchbar {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    gap: 10px;
+    width: 650px;
+    grid-template-columns: 25px 600px;
+    grid-template-rows: 30px;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+img {
+    grid-column: 1 / 2;
+    align-self: start;
+    justify-self: center;
+}
+
+form > input#fsearch {
+    grid-column: 2 / 3;
+    background-color: #bdbdbd;
+    width: 80%;
+    height: 80%;
+    border: none;
+    border-radius: 15px;
+    padding-left: 10px;
+    place-self: center;
 }
 
 .main-content {
@@ -108,13 +140,7 @@
     grid-template-rows: minmax(200px, 295px) 50px minmax(200px, 295px);
 }
 
-.quick-links {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 50px 50px 50px;
-    color: rgb(68, 68, 68);
-    justify-items: center;
-}
+
 
 .announcements-title {
     font-size: 1.1rem;
@@ -237,19 +263,22 @@
 }
 
 .card > .content {
+    color: #656565;
     font-size: 0.9rem;
     margin: 0;
     place-self: start start;
 }
 
 .quick-links {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50px 50px 50px;
+    color: rgb(68, 68, 68);
+    justify-items: center;
     place-self: end end;
 }
 
-.searchbar {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
+
 
 .bell {
     grid-column: 2 / 3;
