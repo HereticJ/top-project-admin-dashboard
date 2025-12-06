@@ -1,8 +1,13 @@
+@font-face {
+    font-family: quicksand;
+    src: url(Quicksand-VariableFont_wght.ttf);
+}
+
 .container {
     display: grid;
     grid-template-columns: minmax(100px, 275px) minmax(700px 1000px);
     grid-template-rows: 100%;
-    background-color: rgb(230, 230, 230);
+    background-color: rgba(230, 230, 230, 0.76);
     z-index: 0;
 }
 
@@ -22,6 +27,7 @@
 
 .logo {
     display: grid;
+    font-family: quicksand;
     font-size: 2rem;
     font-weight: bold;
     grid-row: 1 / 2;
@@ -49,6 +55,7 @@
 
 .dash-nav {
     display: grid;
+    font-family: quicksand;
     font-size: 1.2rem;
     font-weight: bold;
     grid-row: 2 / 3;
@@ -61,6 +68,7 @@
 
 .dash-settings {
     display: grid;
+    font-family: quicksand;
     font-size: 1.2rem;
     font-weight: bold;
     grid-row: 3 / 4;
@@ -86,7 +94,7 @@
     font-weight: bold;
     color: white;
     justify-self: start;
-    padding-left: 22px;
+    padding-left: 10px;
 }
 
 .dash-nav > img {
@@ -114,7 +122,7 @@ a > p {
     width: 1000px;
     grid-column: 2 / 3;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 180px 4fr;
 }
 
 .header {
@@ -123,8 +131,8 @@ a > p {
     grid-row: 1 / 2;
     background-color: white;
     border-bottom: 2px solid #959595;
-    grid-template-columns: 650px 70px 50px 150px;
-    grid-template-rows: minmax(60px, 1fr) minmax(85px, 2fr);
+    grid-template-columns: 650px 70px 70px 150px;
+    grid-template-rows: 80px 100px;
 }
 
 .searchbar {
@@ -149,8 +157,8 @@ img {
 
 form > input#fsearch {
     grid-column: 2 / 3;
-    background-color: #bdbdbd;
-    width: 80%;
+    background-color: #c2c2c26b;
+    width: 90%;
     height: 80%;
     border: none;
     border-radius: 15px;
@@ -173,6 +181,7 @@ form > input#fsearch {
 }
 
 .profile-name {
+    font-family: quicksand;
     font-size: 1.1rem;
     font-weight: 700;
     grid-column: 4 / 5;
@@ -183,6 +192,7 @@ form > input#fsearch {
 
 .main-greeting {
     display: grid;
+    font-family: quicksand;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     grid-template-columns: 1fr 5fr;
@@ -212,45 +222,52 @@ p.profile-greeting {
 }
 
 .buttons {
+    display: grid;
     grid-column: 2 / 5;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 100px 100px 100px;
     grid-template-rows: 1fr;
-    align-content: space-evenly;
 }
 
 .new-button {
     color: white;
     background-color: #0099E6;
+    font-family: quicksand;
     font-weight: bold;
     font-size: 0.7rem;
     height: 35px;
-    width: 75px;
+    width: 85px;
     border: none;
     border-radius: 25px;
-    margin-right: 15px;
+    align-self: center;
+    justify-self: start;
 }
 
 .upload-button {
     color: white;
     background-color: #0099E6;
+    font-family: quicksand;
     font-weight: bold;
     font-size: 0.7rem;
     height: 35px;
-    width: 75px;
+    width: 85px;
     border: none;
     border-radius: 25px;
-    margin-right: 15px;
+    align-self: center;
+    justify-self: center;
 }
 
 .share-button {
     color: white;
     background-color: #0099E6;
+    font-family: quicksand;
     font-weight: bold;
     font-size: 0.7rem;
     height: 35px;
-    width: 75px;
+    width: 85px;
     border: none;
     border-radius: 25px;
+    align-self: center;
+    justify-self: end;
 }
 
 .main-content {
@@ -288,6 +305,7 @@ p.profile-greeting {
 }
 
 .announcements-title {
+    font-family: quicksand;
     font-size: 1.1rem;
     font-weight: 700;
     margin: 0;
@@ -304,14 +322,18 @@ p.profile-greeting {
     margin: none;
     grid-row: 1 / 2;
     border-radius: 10px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     grid-template-columns: auto-fit;
     grid-template-rows: 20px 50px 20px 50px 20px 50px;
-    align-content: space-around;
+    align-content: space-evenly;
 }
 
 .announcements > .content-title1 {
     grid-row: 1 / 2;
+    font-family: quicksand;
     font-size: 14px;
     font-weight: 700;
     padding-top: 6px;
@@ -320,6 +342,7 @@ p.profile-greeting {
 
 .announcements > .content-title2 {
     grid-row: 3 / 4;
+    font-family: quicksand;
     font-size: 14px;
     font-weight: 700;
     padding-top: 8px;
@@ -328,6 +351,7 @@ p.profile-greeting {
 
 .announcements > .content-title3 {
     grid-row: 5 / 6;
+    font-family: quicksand;
     font-size: 14px;
     font-weight: 700;
     padding-top: 8px;
@@ -336,7 +360,8 @@ p.profile-greeting {
 
 .announcements > .content1 {
     grid-row: 2 / 3;
-    font-size: 11px;
+    font-family: quicksand;
+    font-size: 10px;
     color: rgb(68, 68, 68);
     padding-bottom: 4px;
     border-bottom: 1px solid darkgrey;
@@ -345,7 +370,8 @@ p.profile-greeting {
 
 .announcements > .content2 {
     grid-row: 4 / 5;
-    font-size: 11px;
+    font-family: quicksand;
+    font-size: 10px;
     color: rgb(68, 68, 68);
     border-bottom: 1px solid darkgrey;
     padding-bottom: 4px;
@@ -355,11 +381,13 @@ p.profile-greeting {
 .announcements > .content3 {
     grid-row: 6 / 7;
     color: rgb(68, 68, 68);
-    font-size: 11px;
+    font-family: quicksand;
+    font-size: 10px;
     margin: 0;
 }
 
 .projects-title {
+    font-family: quicksand;
     font-size: 1.1rem;
     font-weight: 700;
     margin: 0;
@@ -373,6 +401,7 @@ p.profile-greeting {
 }
 
 .trending-title {
+    font-family: quicksand;
     font-size: 1.1rem;
     font-weight: 700;
     grid-row: 2 / 3;
@@ -416,6 +445,7 @@ p.profile-greeting {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     margin: 0;
+    font-family: quicksand;
     font-size: 0.8rem;
     color: #656565;
 }
@@ -424,6 +454,7 @@ p.profile-greeting {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     margin: 0;
+    font-family: quicksand;
     font-size: 0.8rem;
     color: #656565;
 }
@@ -432,6 +463,7 @@ p.profile-greeting {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     margin: 0;
+    font-family: quicksand;
     font-size: 0.8rem;
     color: #656565;
 }
@@ -440,6 +472,7 @@ p.profile-greeting {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     margin: 0;
+    font-family: quicksand;
     font-size: 0.8rem;
     color: #656565;
 }
@@ -456,6 +489,7 @@ p.profile-greeting {
 }
 
 .card > .title {
+    font-family: quicksand;
     font-size: 1.1rem;
     font-weight: 700;
     margin: 0;
@@ -465,6 +499,7 @@ p.profile-greeting {
 
 .card > .content {
     color: #656565;
+    font-family: quicksand;
     font-size: 0.9rem;
     margin: 0;
     place-self: start start;
@@ -480,6 +515,7 @@ p.profile-greeting {
 }
 
 .footer {
+    font-family: quicksand;
     grid-column: 1 / 3;
     place-content: end;
     padding-right: 4px;
@@ -487,6 +523,7 @@ p.profile-greeting {
 
 .credit {
     margin: 0;
+    font-family: quicksand;
     font-size: 0.8rem;
     place-self: end;
 }
